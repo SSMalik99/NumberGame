@@ -37,3 +37,12 @@ const playGame = ( i=0 ) => {
     }
     
 }
+
+
+const checkInput = () => {
+    let ele = document.getElementById('numberValue');
+    console.log('previous value: ',ele.value);
+    let rg = /[^0-9]/g
+    ele.value = ele.value.replace(rg,'');
+    console.log('modified value: ',ele.value)
+}
